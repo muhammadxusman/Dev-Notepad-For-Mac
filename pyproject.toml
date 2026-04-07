@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dev-scratchpad"
+version = "0.1.0"
+description = "A local-first developer scratchpad desktop app for macOS."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.7"]
+
+[project.scripts]
+dev-scratchpad = "app.main:main"
+
+[tool.setuptools]
+packages = ["app"]
+
